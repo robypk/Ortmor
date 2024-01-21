@@ -28,5 +28,10 @@ public class CharacterManger : MonoBehaviour
 
     }
 
+    public void onProcessedButtonClick()
+    {
+        DataContainer.Instance.SceneLoad(1);
+    }
+
 
 }

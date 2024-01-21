@@ -34,6 +34,8 @@ public class PhotoShare : MonoBehaviour
 
     public void onHomeButtonClick()
     {
+        DataContainer.Instance.SelectedCharacters.Clear();
+        DataContainer.Instance.capturePhoto = null;
         DataContainer.Instance.SceneLoad(0);
     }
 }
