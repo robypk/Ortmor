@@ -10,6 +10,7 @@ public class DataContainer : MonoBehaviour
 
     public static DataContainer Instance;
     public List<Character> SelectedCharacters = new List<Character>();
+    public Texture2D capturePhoto;
 
 
     void Awake()
@@ -28,10 +29,6 @@ public class DataContainer : MonoBehaviour
     public void SceneLoad(int SceneIndex)
     {
         SceneManager.LoadScene( SceneIndex);
-        foreach (Character character in SelectedCharacters)
-        {
-            print( character );
-        }
     }
 
 

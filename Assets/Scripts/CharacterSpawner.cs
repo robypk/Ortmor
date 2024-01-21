@@ -11,8 +11,16 @@ public class CharacterSpawner : MonoBehaviour
     [SerializeField] GameObject QUALUM;
     [SerializeField] GameObject SUP;
     [SerializeField] GameObject WAM;
-    // Start is called before the first frame update
-    void Start()
+
+    private void Start()
+    {
+
+        NUQA.SetActive(false);
+        QUALUM.SetActive(false);
+        SUP.SetActive(false);
+        WAM.SetActive(false);
+    }
+    public void SpawnCharacter()
     {
         foreach (Character item in DataContainer.Instance.SelectedCharacters)
         {
